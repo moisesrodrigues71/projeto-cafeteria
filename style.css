@@ -211,17 +211,21 @@ body {
 
 
 .contact {
-    padding: 80px 8%;
+    width: 100%;
+    padding: 80px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 40px auto 0;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+   width: 100%;
+   max-width: 600px;
+   margin-top: 40px;
 }
+
+
 
 .input-group {
     position: relative;
@@ -340,6 +344,13 @@ body {
         display: flex;
     }
 }
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 6%;
+    }
+}
+
 
 
 
