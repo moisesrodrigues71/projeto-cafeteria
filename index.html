@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Coffe / Caféteria</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="imagens/logo-cafeteria.png" alt="logo">
+        </a>
+        <div class="menu-toggle">☰</div>
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#">Menu</a>
+          <a href="#">Avaliações</a>
+          <a href="#">Endereço</a>
+        </nav>
+        <div class="icons">
+        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v2.png" alt="search--v2"/>
+        </div>
+      </section>
+    </header>
+    <div class="home-container">
+      <section id="home">
+        <div class="content">
+          <h3>O melhor café da sua Região está bem aqui.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolor id modi repellat, obcaecati animi atque excepturi fuga quas magnam porro, cum eaque. Veritatis debitis a aperiam incidunt, asperiores qui.</p>
+          <a href="#" class="btn">Compre o seu Agora aqui.</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="about" id="about">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="container-image">
+          <img src="imagens/imagem-sobre-nos.png" alt="Sobre nós">
+        </div>
+        <div class="content">
+          <h3>O que faz nosso Café Especial</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem ullam dolor inventore corrupti eum? Doloremque deserunt, vitae asperiores autem iste, molestias harum eligendi vero distinctio natus a et aspernatur?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos unde quia accusantium velit placeat nisi, eaque deleniti iure quos nemo dicta vel saepe ipsam obcaecati reiciendis sunt praesentium quis!</p>
+          <a href="#" class="btn">Saiba mais aqui.</a>
+        </div>
+      </div>
+      <section class="menu" id="menu">
+        <h2 class="title">Nosso <span>Menu</span></h2>
+
+        <div class="box-container">
+          <div class="box">
+            <img src="imagens/foto1.jpg" alt="item-1">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+            <div class="box">
+            <img src="imagens/foto2.jpg" alt="item-2">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+            <div class="box">
+            <img src="imagens/foto3.jpg" alt="item-3">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+            <div class="box">
+            <img src="imagens/foto4.jpg" alt="item-4">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+            <div class="box">
+            <img src="imagens/foto-5.png" alt="item-5">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+            <div class="box">
+            <img src="imagens/foto-6.png" alt="item-1">
+            <h3>Café coado</h3>
+            <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
+            <a href="#" class="btn">Adicione ao Carrinho</a>
+          </div>
+         
+      </section>
+
+      <script>
+const menu = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+menu.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
+     
+    
+</body>
+</html>
