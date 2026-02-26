@@ -16,7 +16,10 @@
     text-transform: capitalize;
     transition: 0.2 linear;
     font-family: "Roboto", sans-serif;
+  
 }
+
+
 
 section {
     padding: 3rem 2rem;
@@ -26,6 +29,8 @@ section {
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
+    
 }
 
 .header {
@@ -133,7 +138,9 @@ body {
     align-items: center;
     background-color: var(--black);
     gap: 40px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    
+   
 }
 
 .about .content {
@@ -141,7 +148,7 @@ body {
 }
 
 .about .container-image {
-    flex: 0 0 45%;
+    flex: 1 1 400px;
 }
 
 .about .container-image img {
@@ -209,110 +216,77 @@ body {
     background-color: var(--main-color);
 }
 
+/* ===== CONTACT ===== */
+
+/* ===== CONTACT MODERNO ===== */
 
 .contact {
-    width: 100%;
-    padding: 80px 20px;
-    text-align: center;
+    background: linear-gradient(135deg, #111, #1f1f1f);
+    padding: 6rem 2rem;
+}
+
+.contact .row {
     display: flex;
-    flex-direction: column;
-   
+    justify-content: center;
 }
 
-.contact-form {
-   width: 100%;
-   max-width: 600px;
-   margin-top: 40px;
-}
-
-
-
-.input-group {
-    position: relative;
-}
-
-.input-group input,
-.input-group textarea {
+.contact form {
     width: 100%;
-    padding: 15px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    background: transparent;
-    color: #fff;
+    max-width: 750px;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    transition: 0.4s ease;
+}
+
+/* INPUTS */
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
     font-size: 1.6rem;
+    border-radius: 10px;
+    background: #181818;
+    color: #fff;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+/* ANIMAÇÃO QUANDO CLICA */
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border: 1px solid var(--main-color);
+    background: #222;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px var(--main-color);
     outline: none;
-    transition: 0.3s;
 }
 
-.input-group label {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
-    pointer-events: none;
-    transition: 0.3s;
-    background: var(--bg);
-    padding: 0 5px;
+/* TEXTAREA */
+
+.contact form textarea {
+    resize: none;
+    height: 160px;
 }
 
-.input-group textarea + label {
-    top: 20px;
-    transform: none;
+/* BOTÃO */
+
+.contact form .btn {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 12px;
+    transition: 0.3s ease;
 }
 
-/* efeito ao clicar */
-.input-group input:focus,
-.input-group textarea:focus {
-    border-color: var(--main-color);
-}
-
-/* label sobe */
-.input-group input:focus + label,
-.input-group input:valid + label,
-.input-group textarea:focus + label,
-.input-group textarea:valid + label {
-    top: -10px;
-    font-size: 1.2rem;
-    color: var(--main-color);
-}
-
-.contact .btn {
-    border-radius: 8px;
-    border: none;
-    transition: 0.3s;
-}
-
-.contact .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-
-@media (max-width: 768px) {
-  .about .row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about .container-image,
-  .about .content {
-    flex: 0 0 100%;
-  }
-}
-
-@media (max-width: 768px) {
-    .home-container {
-        min-height: 75vh;
-        background-position: center;
-    }
-
-    .home-container section {
-        min-height: auto;
-        padding: 120px 6% 60px;
-        justify-content: center;
-        text-align: center;
-    }
+.contact form .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--main-color);
 }
 
 
@@ -345,11 +319,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .contact {
-        padding: 60px 6%;
-    }
-}
+
 
 
 

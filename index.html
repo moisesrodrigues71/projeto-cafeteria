@@ -41,10 +41,12 @@
 
     <section class="about" id="about">
       <h2 class="title">Sobre <span>Nós</span></h2>
+
       <div class="row">
         <div class="container-image">
           <img src="imagens/imagem-sobre-nos.png" alt="Sobre nós">
         </div>
+
         <div class="content">
           <h3>O que faz nosso Café Especial</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem ullam dolor inventore corrupti eum? Doloremque deserunt, vitae asperiores autem iste, molestias harum eligendi vero distinctio natus a et aspernatur?</p>
@@ -52,6 +54,8 @@
           <a href="#" class="btn">Saiba mais aqui.</a>
         </div>
       </div>
+    </section>
+
       <section class="menu" id="menu">
         <h2 class="title">Nosso <span>Menu</span></h2>
 
@@ -93,40 +97,22 @@
             <a href="#" class="btn">Adicione ao Carrinho</a>
           </div>
 
-          <section class="contact" id="contact">
-
-    <h2 class="title">Fale <span>Conosco</span></h2>
-
-    <form class="contact-form">
-
-        <div class="input-group">
-            <input type="text" required>
-            <label>Seu nome</label>
-        </div>
-
-        <div class="input-group">
-            <input type="email" required>
-            <label>Seu email</label>
-        </div>
-
-        <div class="input-group">
-            <input type="tel" required>
-            <label>Telefone</label>
-        </div>
-
-        <div class="input-group">
-            <textarea rows="5" required></textarea>
-            <label>Sua mensagem</label>
-        </div>
-
-        <button type="submit" class="btn">Enviar mensagem</button>
-
-    </form>
-
-</section>
-
-         
       </section>
+
+      <section class="contact" id="contact">
+  <h2 class="title">Fale <span>Conosco</span></h2>
+
+  <div class="row">
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <input type="tel" placeholder="Seu telefone" required>
+      <textarea placeholder="Sua mensagem"></textarea>
+      <button class="btn">Enviar</button>
+      <button type="reset" class="btn">Limpar</button>
+    </form>
+  </div>
+</section>
 
       <script>
 const menu = document.querySelector(".menu-toggle");
