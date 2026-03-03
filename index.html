@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body>
     <header class="header">
@@ -42,12 +44,16 @@
     <section class="about" id="about">
       <h2 class="title">Sobre <span>Nós</span></h2>
 
+      <div class="container-image" data-aos="fade-right"></div>
+
+      <div class="content" data-aos="fade-left"></div>
+
       <div class="row">
-        <div class="container-image">
+        <div class="container-image" data-aos="fade-right">
           <img src="imagens/imagem-sobre-nos.png" alt="Sobre nós">
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="fade-left">
           <h3>O que faz nosso Café Especial</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem ullam dolor inventore corrupti eum? Doloremque deserunt, vitae asperiores autem iste, molestias harum eligendi vero distinctio natus a et aspernatur?</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos unde quia accusantium velit placeat nisi, eaque deleniti iure quos nemo dicta vel saepe ipsam obcaecati reiciendis sunt praesentium quis!</p>
@@ -59,7 +65,7 @@
       <section class="menu" id="menu">
         <h2 class="title">Nosso <span>Menu</span></h2>
 
-        <div class="box-container">
+        <div class="box-container" data-aos="zoom-in">
           <div class="box">
             <img src="imagens/foto1.jpg" alt="item-1">
             <h3>Café coado</h3>
@@ -103,7 +109,7 @@
   <h2 class="title">Fale <span>Conosco</span></h2>
 
   <div class="row">
-    <form>
+    <form data-aos="fade-up">
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu email" required>
       <input type="tel" placeholder="Seu telefone" required>
@@ -121,6 +127,14 @@ const navbar = document.querySelector(".navbar");
 menu.onclick = () => {
     navbar.classList.toggle("active");
 };
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
 </script>
      
     
