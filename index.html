@@ -8,9 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  <link rel="stylesheet" href="responsividade.css">
 </head>
 <body>
     <header class="header">
@@ -26,9 +24,7 @@
           <a href="#">Avaliações</a>
           <a href="#">Endereço</a>
         </nav>
-        <div class="icons">
-        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search--v2.png" alt="search--v2"/>
-        </div>
+
       </section>
     </header>
     <div class="home-container">
@@ -43,17 +39,13 @@
 
     <section class="about" id="about">
       <h2 class="title">Sobre <span>Nós</span></h2>
-
-      <div class="container-image" data-aos="fade-right"></div>
-
-      <div class="content" data-aos="fade-left"></div>
-
+      
       <div class="row">
-        <div class="container-image" data-aos="fade-right">
+        <div class="container-image">
           <img src="imagens/imagem-sobre-nos.png" alt="Sobre nós">
         </div>
 
-        <div class="content" data-aos="fade-left">
+        <div class="content">
           <h3>O que faz nosso Café Especial</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem ullam dolor inventore corrupti eum? Doloremque deserunt, vitae asperiores autem iste, molestias harum eligendi vero distinctio natus a et aspernatur?</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos unde quia accusantium velit placeat nisi, eaque deleniti iure quos nemo dicta vel saepe ipsam obcaecati reiciendis sunt praesentium quis!</p>
@@ -65,7 +57,7 @@
       <section class="menu" id="menu">
         <h2 class="title">Nosso <span>Menu</span></h2>
 
-        <div class="box-container" data-aos="zoom-in">
+        <div class="box-container">
           <div class="box">
             <img src="imagens/foto1.jpg" alt="item-1">
             <h3>Café coado</h3>
@@ -102,14 +94,14 @@
             <div class="price">R$ 15,99 <span>R$ 20,99</span></div>
             <a href="#" class="btn">Adicione ao Carrinho</a>
           </div>
-
+        </div>
       </section>
 
       <section class="contact" id="contact">
   <h2 class="title">Fale <span>Conosco</span></h2>
 
   <div class="row">
-    <form data-aos="fade-up">
+    <form>
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu email" required>
       <input type="tel" placeholder="Seu telefone" required>
@@ -119,24 +111,6 @@
     </form>
   </div>
 </section>
-
-      <script>
-const menu = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
-
-menu.onclick = () => {
-    navbar.classList.toggle("active");
-};
-</script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({
-  duration: 1000,
-  once: true
-});
-</script>
-     
-    
+<script src="script.js"></script>
 </body>
 </html>

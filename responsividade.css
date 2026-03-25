@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        font-size: 1.8rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+@media (max-width:768px){
+
+.home-container{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-container .content{
+    max-width: 100%;
+}
+
+.home-container .content h3{
+    font-size: 28px;
+}
+
+.home-container .content p{
+    font-size: 16px;
+}
+
+}

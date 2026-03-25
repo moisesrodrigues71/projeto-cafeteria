@@ -290,35 +290,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--bg);
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .navbar a {
-        display: block;
-        margin: 15px 0;
-        font-size: 1.8rem;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}
-
 
 
 
